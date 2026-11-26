@@ -169,6 +169,7 @@ def predict():
         placed_probability=round(placed_probability, 2),
         not_placed_probability=round(not_placed_probability, 2),
         data=data,
+        student_profile=data,
         strengths=strengths,
         gaps=gaps,
         improvement_areas=improvement_areas,
