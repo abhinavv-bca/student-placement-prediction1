@@ -80,6 +80,17 @@ def predict():
         "Gender": request.form["Gender"]
     }
 
+        # Student personal profile
+    student_profile = {
+        "Name": request.form["Name"],
+        "Roll_Number": request.form["Roll_Number"],
+        "Date_of_Birth": request.form["Date_of_Birth"],
+        "Academic_Year": request.form["Academic_Year"],
+        "Branch": request.form["Branch"],
+        "Gender": request.form["Gender"],
+        "CGPA": float(request.form["CGPA"])
+    }
+
     # Create DataFrame
     input_df = pd.DataFrame([data])
 
@@ -169,7 +180,7 @@ def predict():
         placed_probability=round(placed_probability, 2),
         not_placed_probability=round(not_placed_probability, 2),
         data=data,
-        student_profile=data,
+        student_profile=student_profile,
         strengths=strengths,
         gaps=gaps,
         improvement_areas=improvement_areas,
