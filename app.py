@@ -80,11 +80,12 @@ def predict():
         "Gender": request.form["Gender"]
     }
 
-        # Student personal profile
+       # Student personal profile
     student_profile = {
         "Name": request.form["Name"],
         "Roll_Number": request.form["Roll_Number"],
-        "Date_of_Birth": request.form["DOB"],
+        "Semester": request.form["Semester"],
+        "DOB": request.form["DOB"],
         "Academic_Year": request.form["Academic_Year"],
         "Branch": request.form["Branch"],
         "Gender": request.form["Gender"],
